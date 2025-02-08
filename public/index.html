@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wedding Gift Registry</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Create Your Wedding Gift Registry</h1>
+    <form id="createEventForm">
+      <input type="text" id="coupleName" placeholder="Couple's Names" required>
+      <input type="date" id="weddingDate" required>
+      <div id="giftList">
+        <h3>Add Gifts</h3>
+        <div class="gift-item">
+          <input type="text" placeholder="Gift Name" class="giftName" required>
+          <input type="text" placeholder="Description" class="giftDesc">
+          <label><input type="checkbox" class="isGroupGift"> Group Gift</label>
+          <button type="button" onclick="removeGift(this)">Remove</button>
+        </div>
+      </div>
+      <button type="button" onclick="addGiftField()">Add Another Gift</button>
+      <button type="submit">Create Event</button>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
